@@ -1,53 +1,50 @@
 # github-cli
 
-A small Rust CLI for fetching GitHub user profiles and public repositories.
+> a small Rust CLI for fetching GitHub profiles and public repositories because apparently i wanted to make my own tiny GitHub API thing thingy thing
 
-Built as a Rust learning project focused on REST APIs, asynchronous programming, JSON deserialization, and CLI structure.
+## About
+
+so uhm, basically, this is a little Rust project i made to mess around with REST APIs, async stuff, JSON deserialization, and making an actually structured CLI
+
+it uses GitHub's public API to fetch a user's profile and repositories...
 
 ## Features
 
-* Fetch GitHub user profiles
-* List public repositories
-* Display repository descriptions, URLs, stars, and forks
-* Handles invalid usernames
-* Async HTTP requests with `reqwest` and `tokio`
+* fetch GitHub user profiles
+* list public repositories
+* show repository descriptions, URLs, stars, and forks
+* handles invalid usernames
+* async HTTP requests with `reqwest` and `tokio`
 * JSON deserialization with `serde`
-* Console I/O with `jstdlib`
+* console I/O with `jstdlib`
 
-## Stack Used
+## Requirements
 
 * Rust
-* Reqwest
-* Serde
-* Tokio
-* jstdlib
+* Cargo
 
-## Structure
+## Installation
 
-```text
-src/
-├── main.rs
-├── app.rs
-├── api/
-│   ├── mod.rs
-│   └── github_client.rs
-└── models/
-    ├── mod.rs
-    ├── user.rs
-    └── repository.rs
+clone the repository:
+
+```bash
+git clone <insert-repository-url-here>
+cd github-cli
 ```
 
-## Running
+then run it with Cargo:
 
 ```bash
 cargo run
 ```
 
-For a release build:
+or build a release version:
 
 ```bash
 cargo build --release
 ```
+
+the compiled executable will be in `target/release/`.
 
 ## Example
 
@@ -57,6 +54,7 @@ GitHub username: jayywashere
 Name: jayyzor
 Username: jayywashere
 Bio: ...
+
 Public repos count: 11
 Followers count: 0
 Following count: 0
@@ -70,14 +68,18 @@ Repositories:
   Forks: 0
 ```
 
-## What I Learned (And Will Forget Tomorrow)
+## what i learned (and will probably forget tmrw)
 
-* Rust modules and structs
-* `Option<T>` and `Result<T, E>`
-* Error handling
+* Rust modules and structs, ofc
+* `Option<T>` and `Result<T, E>`. WOOHOOOOOOOOOOOOOOOO
+* error handling
 * `async` / `await`
 * HTTP requests and REST APIs
 * JSON deserialization with Serde
-* Working with `Vec<T>`
-* Using a personal Rust utility crate
-* Separating application, API, and model logic
+* working with `Vec<T>`
+* using a personal Rust utility crate
+* separating application, API, and model logic
+
+## License
+
+See [LICENSE](LICENSE).
