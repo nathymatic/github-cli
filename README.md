@@ -49,10 +49,10 @@ the compiled executable will be in `target/release/`.
 ## Example
 
 ```text
-GitHub username: jayywashere
+GitHub username: nathymatic
 
 Name: jayyzor
-Username: jayywashere
+Username: nathymatic
 Bio: ...
 
 Public repos count: 11
@@ -63,7 +63,7 @@ Repositories:
 
 - jstd
   Description: N/A
-  URL: https://github.com/jayywashere/jstd
+  URL: https://github.com/nathymatic/jstd
   Stars: 0
   Forks: 0
 ```
